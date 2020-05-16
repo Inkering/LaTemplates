@@ -1,0 +1,41 @@
+\usepackage{graphicx} % Required for including images
+\usepackage{geometry} % Required for adjusting page dimensions and margins
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage[semibold]{ebgaramond} % Use the EB Garamond font with a reduced bold weight
+\usepackage{sectsty} % Allows changing the font options for sections in a document
+\usepackage{marginnote} % Required to output text in the margin
+\usepackage[usenames, dvipsnames]{xcolor} % Required for specifying colours by name
+\usepackage[bookmarks, colorlinks, breaklinks]{hyperref} % Required for links
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+
+\setlength{\parindent}{0pt} % Stop paragraph indentation
+
+\geometry{
+	paper=letterpaper, % Paper size, change to letterpaper for US letter size
+	top=2cm, % Top margin
+	bottom=2cm, % Bottom margin
+	left=2cm, % Left margin
+	right=2cm, % Right margin
+	headheight=0.75cm, % Header height
+	footskip=1cm, % Space from the bottom margin to the baseline of the footer
+	headsep=0.75cm, % Space from the top margin to the baseline of the header
+	% showframe, % Uncomment to show how the type block is set on the page
+}
+
+\sectionfont{\fontsize{13.5pt}{13pt}\selectfont} % Set font options for sections
+\subsectionfont{\mdseries\scshape\normalsize} % Set font options for subsections
+\subsubsectionfont{\mdseries\upshape\bfseries\normalsize} % Set font options for subsubsections
+
+\newcommand{\dates}[1]{\marginnote{\small #1}} % New command for adding years to the margin
+\renewcommand*{\raggedrightmarginnote}{} % Left-align the years in the margin
+% \setlength{\marginparsep}{-10pt} % Move the margin content closer to the text
+\reversemarginpar % Margin text to be output into the left margin instead of the default right margin
+
+% Set link colours
+\hypersetup{
+	linkcolor=blue,
+	citecolor=blue,
+	filecolor=black,
+	urlcolor=MidnightBlue
+}
