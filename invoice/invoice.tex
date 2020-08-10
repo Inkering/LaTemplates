@@ -1,0 +1,50 @@
+\documentclass[12pt]{article} % Default document font size
+
+\input{styling.tex}
+
+% Set PDF meta-information
+\hypersetup{
+  pdftitle={Author - Contract},
+  pdfauthor={Author}
+}
+
+\begin{document}
+
+{\LARGE\bfseries First Last} % Name
+
+Phone: 000-000-0000\\ % Phone number
+Email: \href{mailto:loremipsum@gmail.com}{loremipsum@gmail.com}\\ % Email address
+Website: \href{https://www.lipsum.com/}{https://www.lipsum.com/}\\ % my website
+Address: \\
+
+{\addtolength{\leftskip}{5mm}
+
+First Last \\
+000 Address Rd \\
+Town, MA 00000}
+
+\section*{Invoice}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lllll}
+Description                                  & Rate & Quantity & Amount &  \\ \hline
+Some work                     & number    & amount       & subtotal     &  \\
+other work  & number   & amount        & subtotal     &  \\ \cline{1-4}
+                                             &      &          & total     & 
+\end{tabular}
+\end{table}
+
+
+\section*{Summary}
+
+The total is  \textbf{\$the amount USD} for completed works.
+
+\bigskip
+\bigskip
+\noindent
+
+Please make all checks payable to Designer
+
+
+\end{document}
